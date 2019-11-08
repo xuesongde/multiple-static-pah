@@ -112,4 +112,27 @@ body {
       right: 0;
     }
   }
+
+  .parent_container {
+    padding: 5px;
+    display: flex;
+
+    .wrap_flex {
+
+      flex: 1;
+      display: flex;
+
+      .item_label {
+        flex: 0 0 auto;
+        // flex-shrink: 0;
+      }
+
+      .item_input {
+        flex: 1 0 40%;
+        // flex-grow: 0;
+        // flex-shrink: 1;
+        // flex-basis: auto;
+      }
+    }
+  }
 }
