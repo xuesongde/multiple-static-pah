@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>About</title>
+  <meta charset="UTF-8">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="yes" name="apple-touch-fullscreen">
+  <meta content="telephone=no,email=no" name="format-detection">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0,user-scalable=no">
+  <!-- <script src="https://img.freshfood.cn/report-flexible.js"></script> -->
+  <!-- <script src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script> -->
+  <script>
+    (function (doc, win) {
+      var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+          var clientWidth = docEl.clientWidth;
+          if (!clientWidth) return;
+          docEl.style.fontSize = 16 * (clientWidth / 320) + 'px';
+        };
+      if (!doc.addEventListener) return;
+      win.addEventListener(resizeEvt, recalc, false);
+      doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+
+  </script>
+</head>
+
+<body>
+
+  <%= require('html-loader!../../partials/nav.html') %>
+  <div class="container">
+    <h1 class="page-title">
+      ABOUT
+    </h1>
+    <ul>
+      <li>九龙坡</li>
+      <li>扁井</li>
+      <li>盐务街</li>
+      <li>开发区</li>
+      <li>南关汽车站</li>
+    </ul>
+  </div>
+
+
+</body>
+
+</html>

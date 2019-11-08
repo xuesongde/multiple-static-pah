@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My homepage</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="pragma" content="no-cache" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport"
+    content="width=device-width,user-scalable=0,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <div class="container">
+    <%= require('html-loader!../../partials/nav.html') %>
+
+    <h1 class="page-title">
+      HOMEPAGE
+    </h1>
+
+    <div class="parent">
+      <img class="child-img" src="${require('../../assets/example.jpg')}" alt="this vertical middle">
+    </div>
+
+    <div class="parent-flex">
+      <div class="child-layout">
+        <img src="${require('../../assets/green.jpg')}" alt="this is flex layout">
+      </div>
+      <div class="child-layout">
+        <img src="${require('../../assets/green.jpg')}" alt="this is flex layout">
+      </div>
+      <div class="child-layout">
+        <img src="${require('../../assets/green.jpg')}" alt="this is flex layout">
+      </div>
+      <div class="child-layout">
+        <img src="${require('../../assets/green.jpg')}" alt="this is flex layout">
+      </div>
+    </div>
+    <!-- parent relative children absolute -->
+    <div class="ra-center">
+      <div class="ra-flex">
+        <img src="${require('../../assets/ra-center.jpeg')}" alt="this is ra-center layout">
+        <img src="${require('../../assets/ra-center.jpeg')}" alt="this is ra-center layout">
+      </div>
+    </div>
+    <!-- float two column  -->
+    <div class="two-column">
+      <div class="left">
+        我定宽
+      </div>
+      <div class="right">
+        我自适应
+      </div>
+    </div>
+
+    <!-- relative&absolute two column  -->
+    <div class="parent-relative">
+      <div class="absolute-left">
+        relative&absolute定宽
+      </div>
+      <div class="absolute-right">
+        relative&absolute自适应
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

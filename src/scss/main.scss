@@ -1,0 +1,43 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: 700 16px #fff;
+
+  ul,
+  h1,
+  h2,
+  h3 {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+body {
+  color: #666;
+  font-weight: 700;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+
+  nav {
+    display: flex;
+    background-color: #f8ef86;
+    flex: 1;
+    height: 50px;
+
+    ul {
+      width: 100%;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      color: #ffffff;
+
+      li {
+        flex: 1;
+        text-align: center;
+        align-self: center;
+      }
+    }
+  }
+}
