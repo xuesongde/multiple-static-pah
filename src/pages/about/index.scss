@@ -31,5 +31,23 @@ body {
         font-size: .8rem;
       }
     }
+
+    .pseudo {
+      display: flex;
+      align-self: center;
+      margin: 20px;
+    }
+
+    .pseudo::after {
+      content: "";
+      width: 10px;
+      height: 10px;
+      top: 4px;
+      position: relative;
+      left: 10px;
+      border-top: solid 1px #fff;
+      border-right: solid 1px #fff;
+      transform: rotate(45deg);
+    }
   }
 }
